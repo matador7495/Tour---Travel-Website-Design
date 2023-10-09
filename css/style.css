@@ -254,3 +254,49 @@ header.sticky {
   filter: brightness(100%) hue-rotate(45deg);
   transform: scale(1.04);
 }
+
+.destination-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+  grid-gap: 2rem;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.col-content {
+  position: relative;
+}
+
+.col-content img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+  filter: brightness(80%);
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  will-change: filter;
+}
+
+.col-content h5 {
+  position: absolute;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--bg-color);
+  left: 15px;
+  bottom: 60px;
+}
+
+.col-content p {
+  position: absolute;
+  font-size: 15px;
+  color: var(--bg-color);
+  left: 15px;
+  bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.col-content img:hover {
+  filter: brightness(100%) hue-rotate(45deg);
+  transform: scale(1.04);
+  cursor: pointer;
+}
