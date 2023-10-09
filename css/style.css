@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: 'Paytone One', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --bg-color: #fff;
+  --text-color: #221314;
+  --secound-color: #5a7184;
+  --main-color: #6e54fa;
+  --big-font: 6rem;
+  --h2-font: 3rem;
+  --p-font: 1.1rem;
+}
