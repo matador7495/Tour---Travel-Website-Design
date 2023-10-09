@@ -185,3 +185,72 @@ header.sticky {
   border: 1px solid transparent;
   transform: translateY(-3px);
 }
+
+.title {
+  text-align: center;
+}
+
+.title h2 {
+  font-size: var(--h2-font);
+  line-height: 1.2;
+}
+
+.package-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-gap: 2rem;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.thum {
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  will-change: filter;
+  cursor: pointer;
+}
+
+.thum img {
+  max-width: 100%;
+  width: 330px;
+  height: auto;
+}
+
+.thum h3 {
+  position: absolute;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: right;
+  color: var(--bg-color);
+  top: 36px;
+  right: 40px;
+}
+
+.dest-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+
+.stars i {
+  color: var(--main-color);
+  font-size: 20px;
+}
+
+.location h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.location p {
+  font-size: 15px;
+  color: var(--secound-color);
+}
+
+.thum:hover {
+  filter: brightness(100%) hue-rotate(45deg);
+  transform: scale(1.04);
+}
